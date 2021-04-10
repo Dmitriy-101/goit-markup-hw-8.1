@@ -1,0 +1,184 @@
+.footer {
+  background-color: $grey-bgc;
+}
+.footer__container {
+  @media screen and (min-width: 320px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 89px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__wrapper {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:first-child {
+      margin-left: auto;
+      margin-right: 170px;
+    }
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+    &:last-child {
+      max-width: 450px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &--left {
+      margin-left: 70px;
+    }
+    &--end {
+      margin-left: auto;
+    }
+  }
+}
+
+.footer__logo--inverse {
+  color: $white-color;
+  display: inline-block;
+  @media screen and (min-width: 320px) {
+    text-align: center;
+  }
+}
+
+.footer__logo--bottom {
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: normal;
+
+  &__items--bottom {
+    margin-bottom: 9px;
+  }
+
+  &__street,
+  &__email,
+  &__phone {
+    font-size: 14px;
+    line-height: 1.71em;
+    color: $white-color;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
+  &__email,
+  &__phone {
+    color: $addres-color;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+  }
+}
+.address__list {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer__invitation {
+  color: $white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  &--bottom {
+    margin-bottom: 20px;
+  }
+}
+
+.social {
+  display: flex;
+}
+
+.social__items--right {
+  margin-right: 10px;
+}
+
+.social__thumb--bgc {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social__icons--color,
+.button__icon {
+  fill: $white-color;
+}
+
+.signup__form {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    &--right {
+      margin-left: auto;
+    }
+  }
+}
+
+.signup__input {
+  background-color: $grey-bgc;
+  border: none;
+  color: $white-color;
+  outline: none;
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 30px;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.modal-button--append {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-button--left {
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+
+.button__icon--left {
+  margin-left: 10px;
+}
