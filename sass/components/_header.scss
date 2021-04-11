@@ -1,0 +1,17 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+}

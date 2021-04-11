@@ -1,0 +1,71 @@
+.projects__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.projects-filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: -8px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+  }
+  @media screen and (min-width: 320px) {
+    &--bottom {
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &--bottom {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &--bottom {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.projects-filter__item {
+  margin: 8px;
+}
+
+.projects-filter__button {
+  color: $secondary-text-color;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63em;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  outline: none;
+  border-width: 2px;
+  border-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    border-color: $accent-color;
+    border-width: 2px;
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
