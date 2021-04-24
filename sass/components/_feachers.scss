@@ -49,6 +49,7 @@
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
+  
   @media screen and (min-width: 1200px) {
     width: calc((100% - 120px) / 4);
     &:not(:first-child) {
