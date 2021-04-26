@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
   .feachers__list {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
+}*/
 
 .feachers__container {
   padding-top: 60px;
@@ -17,6 +17,7 @@
     padding-bottom: 47px;
   }
 }
+
 
 .feachers__list {
   margin-left: auto;
@@ -57,11 +58,11 @@
     }
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199) {
+/*@media screen and (min-width: 480px) and (max-width: 1199) {
   .feachers__items--bottom {
     margin-bottom: 30px;
   }
-}
+}*/
 /* ============== иконки приимуществ ==============*/
 
 .feachers__thumb {
